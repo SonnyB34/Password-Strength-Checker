@@ -1,6 +1,7 @@
 
-  const password = prompt('Enter Password!');
-  passwordStrength(password);
+const password = prompt('Enter Password!');
+
+passwordStrength(password);
 
 
 
@@ -13,11 +14,10 @@ let strengthScore = 0;
 
     // Check if empty string
 
-   if(!password) {
-    document.getElementById('invalid-password-alert').style.display = 'block'
-    return
-  }
-    
+ if(!password) {
+    alert('You did not enter a password! Reload and Try Again!')
+    } 
+
    
 
     // Atleast 10 characters
@@ -148,7 +148,7 @@ let strengthScore = 0;
     document.getElementById('strength-word').innerHTML = '<span>STRONG!</span>';
     document.getElementById('strength-word').style.color = "#14A76C";
     }
-     console.log(strengthScore)
+  
     
      
   } 
