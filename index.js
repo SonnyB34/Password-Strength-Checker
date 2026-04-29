@@ -13,10 +13,12 @@ let strengthScore = 0;
 
     // Check if empty string
 
-   if (!password) {
-    alert('INVALID PASSWORD! Please Try Again!');
-    window.location.reload();
-   }
+   if(!password) {
+    document.getElementById('invalid-password-alert').style.display = 'block'
+    return
+  }
+    
+   
 
     // Atleast 10 characters
 
