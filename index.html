@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container mt-5" id="main-container">
+        <h1 class="display-1 text-center" id="heading">Password Strength</h1>
+        <h2 class="text-center mt-5 display-3" id="strength-rate"><span id="strength-image"></span></h2>
+        <h2 class="text-center mt-5 display-3" id="strength-word"></h2>
+
+        <ul class="list-group col-10" id="listcontainer">
+            <li id="list-item-1" class="list-group-item fs-4" aria-current="true">Has Atleast 10 Characters <span class="result-image" id="rule-result-1">
+            </span></li>
+            
+            <li class="list-group-item fs-4" id="list-item-2">Has Atleast One Lowercase Character<span class="result-image" id="rule-result-2">
+            </span></li>
+
+            <li class="list-group-item fs-4" id="list-item-3">Has Atleast One Uppercase Character<span class="result-image" id="rule-result-3">
+            </span></li>
+
+            <li class="list-group-item fs-4" id="list-item-4">Has Atleast One Number<span class="result-image" id="rule-result-4">
+            </span></li>
+
+            <li class="list-group-item fs-4" id="list-item-5">Atleast One Special Characters $, !, ect.<span class="result-image" id="rule-result-5">
+            </span></li>
+
+            <li class="list-group-item fs-4" id="list-item-6">Should Not Have The Word 'PASSWORD'<span class="result-image" id="rule-result-6">
+            </span></li>
+        </ul>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-color: #272727;
+}
+
+#heading {
+    color: #D3D3D3;
+}
+
+#listcontainer {
+    margin: 100px auto;
+}
+
+.result-image {
+    float: right;
+}
+
+#strength-rate {
+    color: #D3D3D3
+}
