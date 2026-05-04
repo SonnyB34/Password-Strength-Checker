@@ -1,8 +1,20 @@
 
-const password = prompt('Enter Password!');
+const password = document.getElementById("mypassword");
 
-passwordStrength(password);
+password.addEventListener('input', () => {
+    passwordStrength(password.value);
+})
+const toggleBtn = document.getElementById('toggleBtn');
 
+toggleBtn.addEventListener('click', () => {
+    if (password.type === 'password') {
+        password.type = 'text';
+        toggleBtn.textContent = 'Hide';
+    } else {
+        password.type = 'password';
+        toggleBtn.textContent = 'Show';
+    }
+});
 
 
 
